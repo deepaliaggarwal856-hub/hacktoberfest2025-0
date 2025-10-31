@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎉 Hacktoberfest 2025 | Deepali Agarwal</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Poppins", sans-serif;
+      flex-direction: column;
+      color: #333;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      animation: pop 1.5s ease-in-out infinite alternate;
+    }
+    h2 {
+      font-size: 1.5rem;
+      color: #fff;
+      background: #333;
+      padding: 0.6rem 1rem;
+      border-radius: 10px;
+    }
+    button {
+      margin-top: 20px;
+      background: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #333;
+      color: #fff;
+    }
+    @keyframes pop {
+      from { transform: scale(1); }
+      to { transform: scale(1.1); color: #ff4b5c; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎉 Happy Hacktoberfest 2025! 🎉</h1>
+  <h2>Made with ❤️ by Deepali Agarwal</h2>
+  <p>Keep coding, keep contributing 🌱</p>
+
+  <button onclick="showMessage()">Get a Motivation Quote 💬</button>
+
+  <script>
+    const messages = [
+      "Every PR you make is a step forward 🚀",
+      "Open Source = Open Heart ❤️",
+      "You’re not a beginner, you’re learning! 🌟",
+      "Celebrate small wins 🎯",
+      "Hacktoberfest 2025 — Let’s grow together 🌱"
+    ];
+
+    function showMessage() {
+      const randomMsg = messages[Math.floor(Math.random() * messages.length)];
+      alert(randomMsg);
+    }
+  </script>
+
+</body>
+</html>
